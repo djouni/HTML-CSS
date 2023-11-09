@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+</head>
+    <style>
+        h1 {
+            background: red; 
+        }
+
+        h1 {
+            background: blue; 
+        }
+
+        #cabecalho-dois {
+            background: rgb(255, 255, 255); 
+        }
+
+        .fundo-vermelho{
+            background: rgb(255, 0, 0);
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style> <!--Necessario colocar o # para usar o Id no CSS-->
+             <!--Necessario colocar o . para usar a classe no CSS--> 
+<body>
+    <h1 id="cabecalho-um" class="fundo-vermelho borda-esquerda"> <!--Id's não se repetem, Classes podem repetir-->
+        Claudia
+    </h1>
+    
+    <h1 id="cabecalho-dois" class="fundo-vermelho"> <!--Classes podem ter mais de uma e repetir nos elementos-->
+        Fabrice
+    
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed et obcaecati asperiores alias aliquam earum ipsa sequi, iure laudantium, a quidem eligendi recusandae. Expedita deserunt, commodi alias et tenetur aspernatur?</p>
+
+</body>
+</html>
