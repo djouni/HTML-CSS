@@ -9,6 +9,11 @@
         body {
             font-family: sans-serif;
         }
+
+        label {
+            cursor: pointer;
+            
+        }
     </style>
 
 </head>
@@ -18,7 +23,100 @@
         <form action="#" method="get" target="_blank" autocomplete="off">
             <p>O meu formulário</p>
             <p>
-                <input type="text" id="nome" name="nome" placeholder="Nome" value="João Eduardo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required> <!--Placeholder = O que aparece na caixa-->
+            </p>
+
+            <p>
+                <label for="dev">Sou um dev:</label>
+                <input type="checkbox" id="dev" name="dev" value="sim" >
+            </p>
+
+            <p>
+                Gênero:<br>
+                <label for="Feminino">Feminino</label>
+                <input type="radio" id="Feminino" name="gen" value="Feminino" ><br>
+                <label for="Masculino">Masculino</label>
+                <input type="radio" id="Masculino" name="gen" value="Masculino"><br>
+                <label for="Outro">Outro</label>
+                <input type="radio" id="Outro" name="gen" value="Outro">
+            </p>
+
+            <p>
+                <label for="data">Data de nascimento:</label><br>
+                <input type="date" id="data" name="data" value="2023-11-09">
+            </p>
+
+            <p>
+                <label for="datatime">Data e Hora:</label><br>
+                <input type="datetime-local" id="datatime" name="datatime" value="2023-11-09T15:38">
+            </p>
+
+            <p>
+                <label for="time">Hora:</label><br>
+                <input type="time" id="time" name="time" value="15:38">
+            </p>
+
+            <p>
+                <label for="cor">Cor preferida: </label>
+                <input type="color" id="cor" name="cor">
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="ex: example@email.com">
+            </p>
+
+            <p>
+                <label for="foto">Sua foto:</label><br>
+                <input type="file" id="foto" name="foto" accept=".png,.svg,image/*" multiple>
+            </p>
+
+            <p>
+                <label for="numero">Número:</label><br>
+                <input type="number" id="numero" name="numero" min="10" max="60">
+            </p>
+
+            <p>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+            </p>
+
+            <p>
+                <label for="range">Escolha:</label><br>
+                <input type="range" id="range" name="range" min="0" max="10" step="2">
+            </p>
+
+            <p>
+                <label for="url">URL perfil:</label><br>
+                <input type="url" id="url" name="url" placeholder="Link do perfil">
+            </p>
+            
+            <p>
+                <label for="search">Search:</label><br>
+                <input type="search" id="search" name="search">
+            </p>
+
+            <p>
+                <label for="select">Selecione:</label><br>
+                <select id="select" name="select">
+                    <optgroup label="Valor">
+                    <option value="1" label="1">
+                    <option value="2" label="2" selected>
+                    <option value="3" label="3" disabled>
+                    <option value="4" label="4">
+                    </optgroup>    
+                </select>
+            </p>
+
+            <p>
+                <label for="textarea">Observações:</label><br>
+                <textarea id="textarea" name="textarea" placeholder="Digite aqui" rows="4" cols="80"></textarea>
+            </p>
+
+            <p>
+                <button type="reset">Limpar</button> <!--Reseta o form-->
+                <button type="submit">Enviar</button> <!--Envia o form-->
             </p>
         </form>
     </section>
