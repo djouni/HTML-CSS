@@ -1,0 +1,59 @@
+.heading {
+    transition: all 350ms ease-in-out;
+} /* Transição em todos, duração 600ms, esvaecer*/
+
+.heading:hover {
+    background: red;
+} /* ":hover" passar mouse em cima*/
+
+a {
+    color: darkblue;
+}
+
+a:link {
+    color: rgb(0, 236, 71);
+} /* Link não vistado */
+
+a:visited {
+    color: rgb(255, 0, 0);
+} /* Link vistado */
+
+a:hover {
+    background: rgb(192, 20, 20);
+    color: white;
+    text-decoration: none;
+} /*Passar mouse em cima*/
+
+a:active {
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+} /* Clicar e segurar */
+
+input:focus {
+    box-shadow: 0 0 5px rgb(55, 61, 61);
+    outline: none ;
+    border: 1px solid black;
+} /* Em foco */
+
+input:enabled {
+    background-color: aquamarine;
+    cursor: not-allowed;
+}
+
+input:checked {
+    width: 50px;
+    height: 50px;
+}
+
+input:checked + p{
+    background: lightcoral;
+}/*Quando marcado, se aplica ao p, seletor de + deixando somente o primeiro*/
+
+.dad .list li:last-child {
+    background: rebeccapurple;
+} /*Selecionando o último filho para receber a cor*/
+
+input:required {
+    background: blueviolet;
+} /*Obrigatorio*/
