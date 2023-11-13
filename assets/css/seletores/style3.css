@@ -17,3 +17,11 @@
 } /*Selecionando todas as classes Two que vem depois da One com o "~" */
  /*Reparar que o 2 antes do 1 não possui a cor vermelha*/
 
+[meu-atributo="valor"] {
+    color: blue;
+} /*Seletor de atributo*/
+
+[checked] {
+    width: 10px;
+    height: 10px;
+}
