@@ -3,6 +3,17 @@
     padding: 0;
 }
 
-.pai {
+.dad h1+p {
     color: red;
+} /*Adjacent sibling selector*/
+/*Seleciona somente os p's que vem após um h1 com o "+" */
+
+.dad p+h1 {
+    color: yellow;
 }
+
+.dad .one~.two {
+    color: red;
+} /*Selecionando todas as classes Two que vem depois da One com o "~" */
+ /*Reparar que o 2 antes do 1 não possui a cor vermelha*/
+
