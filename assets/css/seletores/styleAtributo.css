@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+[meu-atributo~="valor1"] {
+    color: blue;
+} /*Se aplica a qualquer atributo que conter o valor1, estando em qualquer posição no atributo*/
+
+[atributo|="qualquercoisa"] {
+    color: red;
+} /*Atributo inicia-se com o nome e TEM que ser seguido de um "-" para ser aplicado*/
+
+[atributs^="comecou"] {
+    color: yellow;
+} /*Atributo se inicar com "comecou", ele se aplica, independente de traços ou não*/
+
+[atri$="buto"] {
+    color: green;
+} /*Atributo de terminar com "buto", ele se aplica*/
+
+[buto$="atri"] {
+    color: rgb(128, 0, 128);
+} /*Atributo se conter "atri, ele se aplica*/
