@@ -1,0 +1,12 @@
+#texto {
+    font-family: sans-serif;
+    color: red;
+}
+
+p {
+    font-size: initial; /*Não herda do #texto*/
+}
+
+p {
+    font-size: inherit; /*Herda do #texto*/
+}
