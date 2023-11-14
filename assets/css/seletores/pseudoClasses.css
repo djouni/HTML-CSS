@@ -50,6 +50,10 @@ input:checked + p{
     background: lightcoral;
 }/*Quando marcado, se aplica ao p, seletor de + deixando somente o primeiro*/
 
+input:not(:checked) + p{
+    background: rgb(214, 208, 123);
+} /*Quando o input "NÃO" estiver marcado, ele ficara na cor amarela*/
+
 .dad .list li:last-child {
     background: rebeccapurple;
 } /*Selecionando o último filho para receber a cor*/
@@ -57,3 +61,24 @@ input:checked + p{
 input:required {
     background: blueviolet;
 } /*Obrigatorio*/
+
+p:not(.meio) {
+    color: blue;
+} /*Seletor de negação*/
+
+.listas ul li:nth-child(even) {
+    background: red;
+} /*Selecionando os pares*/
+
+
+.listas ul li:nth-child(odd) {
+    background: blue;
+} /*Selecionando os ímpares*/
+
+.listas ul li:nth-child(3n) {
+    background: greenyellow;
+} /*De três em três se aplica*/
+
+.listas ul li:nth-child(3n+5) {
+    background: orangered;
+} /*Começando do "5" elemento, ai começa a contagem dos 3n, se aplicando ao inicial*/
