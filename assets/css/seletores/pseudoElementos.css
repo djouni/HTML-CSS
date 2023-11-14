@@ -1,0 +1,38 @@
+ul li::after {
+    content: '-';
+    color: red;
+    background: blue;
+    display: block;
+} /*Pseudo elementos são "::" mas funcionam com apenas ":"*/
+
+ul li::before {
+    content: '-';
+    color: red;
+    background: rgb(0, 255, 42);
+    display: block;
+}
+
+p {
+    font-size: 24px;
+}
+
+p::first-letter {
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+p::first-line {
+    background: lightblue;
+} /*Se aplica a primeira linha*/
+
+p::selection {
+    background: black;
+    color: white;
+} /*Se aplica ao que selecionar*/
+
+.form::placeholder {
+    color: black;
+    font-family: sans-serif;
+}

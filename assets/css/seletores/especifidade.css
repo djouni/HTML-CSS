@@ -1,0 +1,33 @@
+/*
+Style   |  ID | Classes, atributos e pseudo-classes | Elementos e pseudo-elementos
+1           1                       0                              0
+0           0                       1                              0
+0           1                       1                              0
+
+!important = força o navegador a aplicar, usar em último recurso
+
+Regras mais específicas vão se aplicadas
+
+Especifidade
+Empate entre especifidades
+Style
+!important****
+
+*/
+body#b.bclass p#p.p{
+    background: lightgreen;
+} /*Especificidade super alta, dificilmente é sobreescrevida*/
+/*Somente um style diretamente no html do elemento sobreescreve*/
+
+#p {
+    background: red;
+}
+
+.p {
+    background: yellow;
+}
+
+#p.p {
+    background: blue;
+}
+
