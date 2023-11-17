@@ -1,16 +1,31 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    box-sizing: border-box;
+    padding: 15px;
 }
 
 .grid .col {
-    width: 300px;
+    box-sizing: border-box;
+    width: 33.33%;
     height: 300px;
-    background: red;
-    margin: 20px;
     float: left;
+    padding: 15px;
 }
 
-p {
+.grid::after {
+    content: ''; /*Pseudo elemento*/
+    display: block;
     clear: both;
 }
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
