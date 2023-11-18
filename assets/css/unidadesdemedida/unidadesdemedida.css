@@ -1,0 +1,15 @@
+    html {
+        font-size: 100%;
+    }
+    
+    .dad {
+        font-size: 50px;
+    }
+  
+    p {
+        font-size: 0.5em;
+        font-size: 1rem;
+    } /* "em" se baseia no tamanho de outro elemento, se multiplicando pelo valor do elemento pai mais próximo*/
+    /* "rem" se baseia no root da página, no caso desse arquivo do HTML*/
+    
+    
