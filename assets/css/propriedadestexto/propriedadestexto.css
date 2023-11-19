@@ -1,0 +1,16 @@
+p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    direction: ltr;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 25px;
+    text-align: left;
+    text-decoration: underline; /* Aceita mais de um */
+    text-indent: 50px; /*Espaço antes de inciar o parágrafo*/
+    text-shadow: 1px 1px 12px red;
+    text-transform: capitalize /*Maiúscula de cada palavra*/;
+
+}
+
