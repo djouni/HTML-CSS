@@ -1,15 +1,40 @@
     html {
-        font-size: 100%;
+        font-size: 62.5%;
+        scroll-behavior: smooth; /*Suaviza o scroll ao clicar*/
+    } 
+
+    * {
+        margin: 0;
+        padding: 0;
     }
     
     .dad {
-        font-size: 50px;
-    }
-  
+        width: 50rem; /*500px*/
+        height: 100vh;
+        background: yellow;
+        overflow: hidden;
+    } /* "vw" equivale a viewport, "vh" viewheight*/
+    /*quando conteúdo se estende ao tamanho se usa overflow para lidar com o mesmo*/
+    
+    .dad > div{ /*Seletor direto*/
+        width: 50%;
+        height: 50rem;
+        background: blue;
+        
+    } 
+    
+    
+    
     p {
-        font-size: 0.5em;
-        font-size: 1rem;
+        font-size: 2vmax;
     } /* "em" se baseia no tamanho de outro elemento, se multiplicando pelo valor do elemento pai mais próximo*/
     /* "rem" se baseia no root da página, no caso desse arquivo do HTML*/
-    
-    
+    /*"vmax e vmin" se baseiam na % do tamanho da tela vmax | vmin __*/
+    .color-one {
+        background: turquoise;
+    }
+
+    .color-two {
+        background: violet;
+    }
+
