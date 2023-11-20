@@ -2,9 +2,7 @@
     margin: 0;
 }
 
-.dad {
-    height: 300vh;
-}
+
 
 .son1, .son2, .son3{
     width: 300px;
@@ -19,7 +17,12 @@
 }
 
 .son2 {
-    background: blue;
+    background: greenyellow;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 1;
+    border-radius: 200px;
 }
 
 .son3 {
@@ -35,4 +38,15 @@
     background: white;    
     top: 50px; /*50px do elemento relativo, do dad*/
     right: 0;
+}
+
+ul {
+    height: 100px;
+    overflow-y: auto;
+}
+
+ul li.sticky {
+    position: sticky;
+    background: blue;
+    top: 0;
 }
