@@ -6,18 +6,19 @@
 
 .flex-container {
     display: flex;
-    align-items: flex-start; /*eixo y*/
-    justify-content: space-between; /*eixo x*/
-    flex-wrap: wrap; /*Quebra a linha*/
-    align-content: flex;
+    flex-direction: row;
     background: yellow;
-    height: 640px;
-    width: 640px;
+    flex-flow: row wrap;
 } /*Display flex, align center, justify center, melhores maneira de centralizar um elemento*/
 
 .flex-item {
+    flex-grow: 1; /*Permite o elemento crescer */
+    flex-basis: 320px; /*Define o tamanho para todos*/
+    flex-shrink: 1; /*Permite ao elemento diminuir*/
+    flex: 1 1 320px; /*Juntar os 3 flex em um atalho*/
+    height: 200px;
     color: white;
-    width: 320px;
     background: red;
-    
 }
+
+
