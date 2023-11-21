@@ -6,15 +6,18 @@
 
 .flex-container {
     display: flex;
-    flex-direction: row;
+    align-items: flex-start; /*eixo y*/
+    justify-content: space-between; /*eixo x*/
+    flex-wrap: wrap; /*Quebra a linha*/
+    align-content: flex;
     background: yellow;
-    align-items: stretch;
-    justify-content: space-evenly;
-    height: 500px;
-}
+    height: 640px;
+    width: 640px;
+} /*Display flex, align center, justify center, melhores maneira de centralizar um elemento*/
 
 .flex-item {
-    width: 100%;
+    color: white;
+    width: 320px;
     background: red;
-    margin: 10px;
+    
 }
